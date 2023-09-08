@@ -1,0 +1,420 @@
+Archive member included because of file (symbol)
+
+d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                              ./APP/main1.o (__udivmodhi4)
+d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCAL/ADC/ADC_Prog.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+ADC_callback        0x2               ./MCAL/ADC/ADC_Prog.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/Timer/PWM.o
+LOAD ./MCAL/DIO/DIO.o
+LOAD ./MCAL/ADC/ADC_Prog.o
+LOAD ./APP/main1.o
+LOAD d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xbd8
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_3
+                0x00000078                __vector_11
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./MCAL/Timer/PWM.o
+ .text          0x0000007c        0x0 ./MCAL/DIO/DIO.o
+ .text          0x0000007c        0x0 ./MCAL/ADC/ADC_Prog.o
+ .text          0x0000007c        0x0 ./APP/main1.o
+ .text          0x0000007c        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .text          0x0000007c        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.MTIMR1_voidTimer1Init
+                0x0000007c       0x8c ./MCAL/Timer/PWM.o
+                0x0000007c                MTIMR1_voidTimer1Init
+ .text.MTIMR1_voidSetICR
+                0x00000108       0x24 ./MCAL/Timer/PWM.o
+                0x00000108                MTIMR1_voidSetICR
+ .text.MTIMR1_voidTimer1SetCompMatchA
+                0x0000012c       0x24 ./MCAL/Timer/PWM.o
+                0x0000012c                MTIMR1_voidTimer1SetCompMatchA
+ .text.MTIMR1_voidTimer1SetCompMatchB
+                0x00000150       0x24 ./MCAL/Timer/PWM.o
+                0x00000150                MTIMR1_voidTimer1SetCompMatchB
+ .text.MDIO_voidSetPinValue
+                0x00000174      0x246 ./MCAL/DIO/DIO.o
+                0x00000174                MDIO_voidSetPinValue
+ .text.MDIO_voidSetPinDirection
+                0x000003ba      0x246 ./MCAL/DIO/DIO.o
+                0x000003ba                MDIO_voidSetPinDirection
+ .text.MDIO_U8GetPinValue
+                0x00000600      0x106 ./MCAL/DIO/DIO.o
+                0x00000600                MDIO_U8GetPinValue
+ .text.MDIO_voidSetPortValue
+                0x00000706       0x88 ./MCAL/DIO/DIO.o
+                0x00000706                MDIO_voidSetPortValue
+ .text.MDIO_voidSetPortDirection
+                0x0000078e       0x88 ./MCAL/DIO/DIO.o
+                0x0000078e                MDIO_voidSetPortDirection
+ .text.MADC_voidIntit
+                0x00000816       0x72 ./MCAL/ADC/ADC_Prog.o
+                0x00000816                MADC_voidIntit
+ .text.MADC_u16AnalogRead
+                0x00000888       0x58 ./MCAL/ADC/ADC_Prog.o
+                0x00000888                MADC_u16AnalogRead
+ .text.MADC_voidStartConversion
+                0x000008e0       0x38 ./MCAL/ADC/ADC_Prog.o
+                0x000008e0                MADC_voidStartConversion
+ .text.MADC_u16GetADCData
+                0x00000918       0x18 ./MCAL/ADC/ADC_Prog.o
+                0x00000918                MADC_u16GetADCData
+ .text.MADC_voidSetCallBack
+                0x00000930       0x24 ./MCAL/ADC/ADC_Prog.o
+                0x00000930                MADC_voidSetCallBack
+ .text.__vector_16
+                0x00000954       0x5a ./MCAL/ADC/ADC_Prog.o
+                0x00000954                __vector_16
+ .text.main     0x000009ae      0x142 ./APP/main1.o
+                0x000009ae                main
+ .text.map      0x00000af0       0xbc ./APP/main1.o
+                0x00000af0                map
+ .text.libgcc   0x00000bac       0x28 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+                0x00000bac                __udivmodhi4
+ .text.libgcc   0x00000bd4        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000bd4        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000bd4                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000bd4        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000bd4                exit
+                0x00000bd4                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000bd4        0x4 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000bd8                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000bd8
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/Timer/PWM.o
+ .data          0x00800060        0x0 ./MCAL/DIO/DIO.o
+ .data          0x00800060        0x0 ./MCAL/ADC/ADC_Prog.o
+ .data          0x00800060        0x0 ./APP/main1.o
+ .data          0x00800060        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .data          0x00800060        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0x2
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./MCAL/Timer/PWM.o
+ .bss           0x00800060        0x0 ./MCAL/DIO/DIO.o
+ .bss           0x00800060        0x0 ./MCAL/ADC/ADC_Prog.o
+ .bss           0x00800060        0x0 ./APP/main1.o
+ .bss           0x00800060        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodhi4.o)
+ .bss           0x00800060        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 d:/downloads/telegram desktop/iti_matrials/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800060        0x2 ./MCAL/ADC/ADC_Prog.o
+                0x00800060                ADC_callback
+                0x00800062                PROVIDE (__bss_end, .)
+                0x00000bd8                __data_load_start = LOADADDR (.data)
+                0x00000bd8                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800062        0x0
+                0x00800062                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800062                PROVIDE (__noinit_end, .)
+                0x00800062                _end = .
+                0x00800062                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1044
+ *(.stab)
+ .stab          0x00000000      0x2d0 ./MCAL/Timer/PWM.o
+ .stab          0x000002d0      0x510 ./MCAL/DIO/DIO.o
+                                0x51c (size before relaxing)
+ .stab          0x000007e0      0x33c ./MCAL/ADC/ADC_Prog.o
+                                0x348 (size before relaxing)
+ .stab          0x00000b1c      0x528 ./APP/main1.o
+                                0x534 (size before relaxing)
+
+.stabstr        0x00000000      0xbde
+ *(.stabstr)
+ .stabstr       0x00000000      0xbde ./MCAL/Timer/PWM.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(iti.elf elf32-avr)
+LOAD linker stubs
